@@ -1,0 +1,38 @@
+{
+  "activeSceneId": "a38f557e9b",
+  "scenes": [
+    {
+      "id": "a38f557e9b",
+      "name": "Scene 1",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sources": [],
+      "createdAt": 1793545674735,
+      "updatedAt": 1793957768964
+    },
+    {
+      "id": "de65721ea2",
+      "name": "Scene 2",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sources": [],
+      "createdAt": 1793575324443,
+      "updatedAt": 1793575324443
+    },
+    {
+      "id": "f4ba3cfc17",
+      "name": "Scene 3",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sources": [],
+      "createdAt": 1793957779654,
+      "updatedAt": 1793957779654
+    }
+  ]
+}

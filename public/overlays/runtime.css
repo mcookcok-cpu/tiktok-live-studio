@@ -1,0 +1,39 @@
+/* Runtime overlay: semua transparan. Jangan beri background pada html/body. */
+#ov-root, #ov-custom { position: absolute; inset: 0; pointer-events: none; }
+#ov-root { font-family: Inter, "Segoe UI", system-ui, sans-serif; color: #fff; text-shadow: 0 2px 6px rgba(0,0,0,.65); }
+#ov-custom { z-index: 5; }
+.ov-fill { position: absolute; inset: 0; box-sizing: border-box; }
+
+.ov-chat { display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; padding: 16px; overflow: hidden; }
+.ov-msg { background: rgba(17,19,24,.62); border-left: 4px solid #8b7bff; border-radius: 8px; padding: 6px 12px; line-height: 1.25; word-break: break-word; animation: ov-in .25s ease-out; max-width: 100%; }
+.ov-msg .u { font-weight: 700; color: #b9aeff; margin-right: 8px; }
+.ov-msg.out { opacity: 0; transition: opacity .6s; }
+
+.ov-gifts { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; padding: 16px; overflow: hidden; }
+.ov-gift { background: linear-gradient(135deg, rgba(124,108,255,.92), rgba(79,140,255,.92)); border-radius: 12px; padding: 10px 16px; font-weight: 700; animation: ov-in .3s ease-out; }
+.ov-gift small { display: block; font-weight: 500; opacity: .85; }
+.ov-gift.out { opacity: 0; transform: translateX(30px); transition: all .5s; }
+
+.ov-alerts { display: flex; align-items: center; justify-content: center; }
+.ov-alert { text-align: center; background: rgba(17,19,24,.8); border: 2px solid #8b7bff; border-radius: 16px; padding: 18px 36px; max-width: 90%; animation: ov-pop .35s ease-out; }
+.ov-alert b { display: block; font-size: 1.5em; color: #b9aeff; }
+.ov-alert span { font-size: 1.1em; word-break: break-word; }
+.ov-alert.out { opacity: 0; transform: scale(.9); transition: all .4s; }
+
+.ov-goal { display: flex; flex-direction: column; justify-content: center; padding: 16px 24px; gap: 8px; }
+.ov-goal .row { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.2em; }
+.ov-goal .bar { height: 28px; border-radius: 14px; background: rgba(17,19,24,.65); overflow: hidden; border: 2px solid rgba(255,255,255,.25); }
+.ov-goal .fill { height: 100%; width: 0; background: linear-gradient(90deg, #7c6cff, #4f8cff); transition: width .6s ease; }
+
+.ov-viewers { display: flex; align-items: center; justify-content: center; gap: 12px; font-weight: 700; }
+.ov-viewers .n { font-size: 2.2em; }
+.ov-viewers .l { opacity: .85; }
+
+.ov-main-chat { position: absolute; left: 0; bottom: 0; width: 34%; height: 55%; }
+.ov-main-gifts { position: absolute; right: 0; top: 0; width: 30%; height: 60%; }
+.ov-main-alerts { position: absolute; left: 0; right: 0; top: 8%; height: 22%; }
+
+.ov-debug { position: absolute; left: 6px; top: 6px; font: 11px monospace; background: rgba(0,0,0,.6); padding: 2px 6px; border-radius: 4px; }
+
+@keyframes ov-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes ov-pop { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }

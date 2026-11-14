@@ -1,0 +1,124 @@
+{
+  "main": {
+    "name": "main",
+    "title": "Main Overlay",
+    "kind": "main",
+    "width": 1920,
+    "height": 1080,
+    "options": {
+      "maxMessages": 6,
+      "duration": 5000
+    },
+    "builtin": true,
+    "customCss": "",
+    "customHtml": "",
+    "customJs": "",
+    "updatedAt": 1793572465501
+  },
+  "chat": {
+    "name": "chat",
+    "title": "Chat",
+    "kind": "chat",
+    "width": 600,
+    "height": 900,
+    "options": {
+      "maxMessages": 10,
+      "fontSize": 28,
+      "lifetime": 0
+    },
+    "builtin": true,
+    "customCss": "",
+    "customHtml": "",
+    "customJs": "",
+    "updatedAt": 1793572556892
+  },
+  "gift": {
+    "name": "gift",
+    "title": "Gift",
+    "kind": "gift",
+    "width": 600,
+    "height": 400,
+    "options": {
+      "duration": 4000,
+      "max": 4
+    },
+    "builtin": true,
+    "customCss": "",
+    "customHtml": "",
+    "customJs": "",
+    "updatedAt": 1793572465501
+  },
+  "alerts": {
+    "name": "alerts",
+    "title": "Alerts",
+    "kind": "alerts",
+    "width": 1280,
+    "height": 400,
+    "options": {
+      "duration": 5000
+    },
+    "builtin": true,
+    "customCss": "",
+    "customHtml": "",
+    "customJs": "",
+    "updatedAt": 1793572465501
+  },
+  "avatar": {
+    "name": "avatar",
+    "title": "Avatar",
+    "kind": "avatar",
+    "width": 1080,
+    "height": 1080,
+    "options": {},
+    "builtin": true,
+    "customCss": "",
+    "customHtml": "",
+    "customJs": "",
+    "updatedAt": 1793572465501
+  },
+  "goal": {
+    "name": "goal",
+    "title": "Goal",
+    "kind": "goal",
+    "width": 800,
+    "height": 140,
+    "options": {
+      "title": "Target Follower",
+      "current": 0,
+      "target": 100
+    },
+    "builtin": true,
+    "customCss": "",
+    "customHtml": "",
+    "customJs": "",
+    "updatedAt": 1793572465501
+  },
+  "viewers": {
+    "name": "viewers",
+    "title": "Viewers",
+    "kind": "viewers",
+    "width": 400,
+    "height": 100,
+    "options": {
+      "label": "Penonton"
+    },
+    "builtin": true,
+    "customCss": "",
+    "customHtml": "",
+    "customJs": "",
+    "updatedAt": 1793572465501
+  },
+  "custom": {
+    "name": "custom",
+    "title": "Custom",
+    "kind": "custom",
+    "width": 1920,
+    "height": 1080,
+    "options": {},
+    "builtin": true,
+    "customCss": "",
+    "customHtml": "",
+    "customJs": "",
+    "updatedAt": 1793572556899
+  }
+}
